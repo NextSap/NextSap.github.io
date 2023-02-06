@@ -514,7 +514,7 @@ footer section {
         width: 100%;
     }
 
-    .activities h1 {
+    .activities h2 {
         margin: 0 0 20px 2%;
     }
 
@@ -533,7 +533,7 @@ footer section {
         width: 45%;
     }
 
-    .activities article h1 {
+    .activities article h2 {
         margin: 0;
     }
 
