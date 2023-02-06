@@ -86,8 +86,6 @@ header nav p a:hover {
     display: flex;
     margin-left: 1.5%;
     margin-top: 25px;
-
-    border: blue solid;
 }
 
 .search #search_icon {
@@ -107,7 +105,10 @@ header nav p a:hover {
     border: #E7E6E6 solid 1px;
 }
 
-.search button {
+.search div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 16px;
     width: 120px;
     background-color: #0065FC;
@@ -117,12 +118,12 @@ header nav p a:hover {
     font-family: Raleway-Bold, sans-serif;
 }
 
-.search button:hover {
+.search div:hover {
     background-color: #1875FF;
     cursor: pointer;
 }
 
-.search button i {
+.search div i {
     position: absolute;
     visibility: hidden;
 }
@@ -220,11 +221,16 @@ main {
     margin-left: 1.5%;
 }
 
-.accomodations h1 {
+.accomodations h2 {
     margin: 0;
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
     padding: 30px;
+}
+
+.accomodations .clickable:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .accomodations .accomodations_container {
@@ -290,7 +296,7 @@ main {
     gap: 40px;
 }
 
-.populars h1, h2 {
+.populars h2 {
     margin: 0;
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
@@ -324,8 +330,8 @@ main {
 
 .populars .populars_container article img {
     height: 140px;
-    width: 40%;
-    min-width: 40%;
+    width: 35%;
+    min-width: 35%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-left: 5px;
@@ -337,7 +343,7 @@ main {
     justify-content: space-around;
     flex-direction: column;
     height: 90%;
-    width: 60%;
+    width: 65%;
     margin-left: 10px;
 }
 
@@ -371,7 +377,7 @@ main {
     gap: 30px
 }
 
-.activities h1 {
+.activities h2 {
     margin: 0;
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
@@ -441,7 +447,7 @@ footer section {
     background-color: #F2F2F2;
 }
 
-@media screen and (min-width: 720px) and (max-width: 1245px) {
+@media screen and (min-width: 770px) and (max-width: 1245px) {
     .filters {
         height: auto;
         flex-wrap: wrap;
@@ -537,7 +543,7 @@ footer section {
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 770px) {
     header {
         height: 150px;
         flex-direction: column;
@@ -553,11 +559,6 @@ footer section {
         margin: 0;
     }
 
-    header nav p a {
-        border-top: none;
-        padding: 0;
-    }
-
     header nav p {
         display: flex;
         justify-content: space-around;
@@ -570,6 +571,17 @@ footer section {
     header nav p:hover {
         border-bottom: #0065FC solid;
         color: #0065FC;
+    }
+
+
+    header nav p a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: none;
+        padding: 0;
+        width: 100%;
+        height: 100%;
     }
 
     header nav p a:hover {
@@ -589,16 +601,16 @@ footer section {
         width: 75%;
     }
 
-    .search button {
+    .search div {
         width: 20%;
     }
 
-    .search button p {
+    .search div p {
         position: absolute;
         visibility: hidden;
     }
 
-    .search button i {
+    .search div i {
         position: relative;
         visibility: visible;
     }
@@ -614,7 +626,7 @@ footer section {
     }
 
     .filters .filter h2 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     main {
