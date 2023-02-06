@@ -322,7 +322,7 @@ main {
 
 .populars .populars_container article img {
     height: 140px;
-    width: 50%;
+    width: 40%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-left: 5px;
@@ -334,7 +334,7 @@ main {
     justify-content: space-around;
     flex-direction: column;
     height: 90%;
-    width: 80%;
+    width: 60%;
     margin-left: 5%;
 }
 
