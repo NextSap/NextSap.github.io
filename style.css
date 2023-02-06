@@ -259,7 +259,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 80%;
+    height: 40%;
     width: 80%;
     margin-top: 5px;
 }
@@ -322,7 +322,7 @@ main {
 
 .populars .populars_container article img {
     height: 140px;
-    width: 40%;
+    width: 30%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     margin-left: 5px;
@@ -334,8 +334,8 @@ main {
     justify-content: space-around;
     flex-direction: column;
     height: 90%;
-    width: 60%;
-    margin-left: 5%;
+    width: 70%;
+    margin-left: 10px;
 }
 
 .populars .populars_container article div .text {
