@@ -220,13 +220,18 @@ main {
     border-radius: 30px;
     margin-top: 30px;
     margin-left: 1.5%;
+    gap: 40px;
 }
 
 .accomodations h2 {
     margin: 0;
     font-size: 18px;
     font-family: Raleway-Bold, sans-serif;
-    padding: 30px;
+    padding: 20px;
+}
+
+.accomodations .clickable {
+    width: 115px;
 }
 
 .accomodations .clickable:hover {
@@ -299,12 +304,8 @@ main {
 
 .populars h2 {
     margin: 0;
-    font-size: 18px;
-    font-family: Raleway-Bold, sans-serif;
-}
-
-.populars h2 {
     font-size: 16px;
+    font-family: Raleway-Bold, sans-serif;
 }
 
 .populars .populars_container {
