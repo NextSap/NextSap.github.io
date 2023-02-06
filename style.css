@@ -54,7 +54,11 @@ header nav a {
     cursor: pointer;
 }
 
-header nav h1 a:hover {
+header nav p {
+    font-size: 16px;
+}
+
+header nav p a:hover {
     border-top: #0065FC solid 3px;
     color: #0065FC;
 }
@@ -326,7 +330,7 @@ main {
     flex-direction: column;
     height: 90%;
     width: 80%;
-    margin-left: 15px;
+    margin-left: 5%;
 }
 
 .populars .populars_container article div .text {
@@ -541,12 +545,12 @@ footer section {
         margin: 0;
     }
 
-    header nav h1 a {
+    header nav p a {
         border-top: none;
         padding: 0;
     }
 
-    header nav h1 {
+    header nav p {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -555,12 +559,12 @@ footer section {
         border-bottom: #F2F2F2 solid;
     }
 
-    header nav h1:hover {
+    header nav p:hover {
         border-bottom: #0065FC solid;
         color: #0065FC;
     }
 
-    header nav h1 a:hover {
+    header nav p a:hover {
         border-top: none;
     }
 
