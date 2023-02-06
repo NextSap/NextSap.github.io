@@ -88,7 +88,7 @@ header nav p a:hover {
     margin-top: 25px;
 }
 
-.search i {
+.search #search_icon {
     margin: 0;
     font-size: 20px;
     padding: 15px;
@@ -118,6 +118,11 @@ header nav p a:hover {
 .search button:hover {
     background-color: #1875FF;
     cursor: pointer;
+}
+
+.search button i {
+    position: absolute;
+    visibility: hidden;
 }
 
 .filters {
@@ -566,6 +571,33 @@ footer section {
 
     header nav p a:hover {
         border-top: none;
+    }
+
+    .search {
+        justify-content: center;
+        width: 95%;
+    }
+
+    .search #search_icon {
+        width: 15px;
+    }
+
+    .search input {
+        width: 75%;
+    }
+
+    .search button {
+        width: 20%;
+    }
+
+    .search button p {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .search button i {
+        position: relative;
+        visibility: visible;
     }
 
     .filters {
