@@ -27,6 +27,7 @@ a {
 
 .stars i {
     color: #0065FC;
+    padding-bottom: 5px;
 }
 
 header {
@@ -250,7 +251,7 @@ main {
     width: 25%;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 5px 5px 5px #A9A9A9;
+    box-shadow: 5px 5px 5px #D7D7D7;
     cursor: pointer;
 }
 
@@ -319,7 +320,7 @@ main {
     height: 150px;
     width: 85%;
     background-color: white;
-    box-shadow: 5px 5px 5px #A9A9A9;
+    box-shadow: 5px 5px 5px #D7D7D7;
     border-radius: 30px;
     cursor: pointer;
 }
@@ -388,7 +389,7 @@ main {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px #A9A9A9;
+    box-shadow: 5px 5px 5px #D7D7D7;
     cursor: pointer;
 }
 
