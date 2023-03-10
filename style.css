@@ -1,0 +1,806 @@
+@font-face {
+    font-family: Raleway-Regular;
+    src: url("assets/font/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Bold;
+    src: url("assets/font/Raleway-Bold.ttf");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1400px;
+    padding: 0;
+    margin: auto;
+    font-family: Raleway-Regular, sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.stars i {
+    color: #0065FC;
+    width: 12px;
+    margin-right: 5px;
+    padding-bottom: 15px;
+}
+
+.fa-solid.fa-star.grey {
+    color: #CBCBCB;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header img {
+    margin-left: 2%;
+    height: 19px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    width: 380px;
+    margin-right: 3%;
+}
+
+header nav a {
+    border-top: white solid 3px;
+    padding: 38px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    border-top: #0065FC solid 3px;
+    color: #0065FC;
+}
+
+.entitled {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-left: 1.5%;
+}
+
+.entitled h1 {
+    margin: 0;
+    font-size: 22px;
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.entitled h2 {
+    margin: 8px 0 0;
+    font-size: 16px;
+}
+
+.search {
+    display: flex;
+    margin-left: 1.5%;
+    margin-top: 25px;
+    height: 50px;
+}
+
+.search #search_icon {
+    font-size: 20px;
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #E7E6E6;
+}
+
+.search input {
+    width: 200px;
+    margin: 0;
+    padding: 11px;
+    font-size: 18px;
+    border: #E7E6E6 solid 1px;
+}
+
+.search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 120px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.search button:hover {
+    background-color: #1875FF;
+    cursor: pointer;
+}
+
+.search button i {
+    position: absolute;
+    visibility: hidden;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5%;
+    margin-top: 40px;
+    height: 45px;
+}
+
+.filters h1 {
+    font-size: 18px;
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.filters .filter {
+    display: flex;
+    align-items: center;
+    border: #E7E6E6 solid 2px;
+    border-left: none;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.filters .filter:hover {
+    background-color: #DEEBFF;
+}
+
+.filters .filter div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: #DEEBFF;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.filters .filter h2 {
+    font-size: 17px;
+    margin-right: 25px;
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.filters .filter div i {
+    font-size: 20px;
+    color: #0065FC;
+}
+
+.informations {
+    display: flex;
+    align-items: center;
+    height: 27px;
+    margin-left: 1.5%;
+    margin-top: 40px;
+}
+
+.informations div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border: #DEEBFF solid 1px;
+    border-radius: 50px;
+}
+
+.informations div i {
+    font-size: 13px;
+    color: #0065FC;
+}
+
+.informations h2 {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.accomodations {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    width: 60%;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 1.5%;
+}
+
+.accomodations h2 {
+    margin: 0;
+    font-size: 22px;
+    font-family: Raleway-Bold, sans-serif;
+    padding: 20px;
+}
+
+.accomodations .clickable {
+    margin: 0;
+    font-size: 22px;
+    font-family: Raleway-Bold, sans-serif;
+    padding: 20px;
+    width: 115px;
+    font-size: 18px;
+}
+
+.accomodations .clickable:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.accomodations .accomodations_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px;
+}
+
+.accomodations .accomodations_container article {
+    height: 225px;
+    width: 26%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #D7D7D7;
+    cursor: pointer;
+}
+
+.accomodations .accomodations_container article a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.accomodations .accomodations_container article a img {
+    height: 50%;
+    min-height: 50%;
+    width: 95%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+.accomodations .accomodations_container article a div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
+    min-height: 50%;
+    width: 90%;
+}
+
+.accomodations .accomodations_container article a div .title {
+    width: 95%;
+    height: 50%;
+    min-height: 0;
+    margin-top: 10px;
+}
+
+.accomodations .accomodations_container article a div .stars {
+    flex-direction: row;
+    justify-content: left;
+    height: auto;
+    min-height: 0;
+}
+
+
+.accomodations .accomodations_container article a div .title h2 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.accomodations .accomodations_container article a div .title h3 {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.populars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    margin: 30px 1.5% 0 1.5%;
+    width: 30%;
+}
+
+.populars .populars_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 90%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.populars .populars_title h2 {
+    font-size: 22px;
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.populars .populars_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.populars .populars_container article {
+    height: 150px;
+    width: 85%;
+    background-color: white;
+    box-shadow: 5px 5px 5px #D7D7D7;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.populars .populars_container article a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.populars .populars_container article a img {
+    height: 140px;
+    width: 40%;
+    min-width: 35%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: 5px;
+    object-fit: cover;
+}
+
+.populars .populars_container article a div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 60%;
+    margin-left: 5px;
+}
+
+.populars .populars_container article a div .title {
+    justify-content: normal;
+    height: auto;
+    width: 95%;
+    margin-top: 10px;
+}
+
+.populars .populars_container article a .title h2 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.populars .populars_container article a .title h3 {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.populars .populars_container article a div .stars {
+    flex-direction: row;
+    justify-content: left;
+    height: 25px;
+}
+
+.activities {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.activities h2 {
+    margin-left: 1.5%;
+    font-size: 18px;
+    font-family: Raleway-Bold, sans-serif;
+}
+
+.activities .activities_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 600px;
+    gap: 30px;
+}
+
+.activities .activities_container article {
+    width: 20%;
+}
+
+.activities .activities_container article a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #D7D7D7;
+    cursor: pointer;
+}
+
+.activities .activities_container article a h2 {
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+}
+
+.activities .activities_container article a img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.small-activity img {
+    height: 155px;
+}
+
+.medium-activity img {
+    height: 275px;
+}
+
+.large-activity img {
+    height: 500px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    height: 250px;
+}
+
+footer h2 {
+    font-size: 18px;
+    font-family: Raleway-Bold, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+footer a {
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer section {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: #F2F2F2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .filters {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filters .filter {
+        flex-direction: row;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accomodations {
+        width: 100%;
+        margin: 30px 1.5% 0 0;
+    }
+
+    .accomodations .accomodations_container {
+        width: 100%;
+    }
+
+    .accomodations .accomodations_container a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        width: 45%;
+    }
+
+    .accomodations .accomodations_container article a {
+        height: 100%;
+        width: 100%;
+    }
+
+    .accomodations .accomodations_container article a img {
+        height: 60%;
+        width: 97%;
+    }
+
+    .accomodations .accomodations_container article a div {
+        height: 40%;
+        font-size: 15px;
+    }
+
+    .populars {
+        margin: 40px 0 0 0;
+        height: 240px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .populars .populars_container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+    }
+
+    .populars .populars_container article {
+        width: 30%;
+    }
+
+    .populars .populars_container article a {
+        width: 100%;
+    }
+
+    .activities {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .activities h2 {
+        margin: 0 0 20px 2%;
+    }
+
+    .activities .activities_container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .activities .activities_container article {
+        height: 200px;
+        width: 45%;
+    }
+
+    .activities .activities_container article a {
+        height: 100%;
+        width: 100%;
+    }
+
+    .activities .activities_container article a h2 {
+        margin: auto;
+    }
+
+    .activities .activities_container article a img {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 150px;
+        flex-direction: column;
+    }
+
+    header img {
+        margin: auto;
+        height: 30px;
+    }
+
+    header nav {
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        border-bottom: #F2F2F2 solid;
+        padding: 5px;
+    }
+
+    header nav a:hover {
+        border-top: none;
+        border-bottom: #0065FC solid;
+        color: #0065FC;
+    }
+
+    .search {
+        justify-content: center;
+        width: 98%;
+    }
+
+    .search #search_icon {
+        width: 15px;
+    }
+
+    .search input {
+        width: 75%;
+    }
+
+    .search button {
+        width: 10%;
+    }
+
+    .search button span {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .search button i {
+        position: relative;
+        visibility: visible;
+    }
+
+    .filters {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .filters .filter {
+        flex-direction: row;
+    }
+
+    .filters .filter h2 {
+        font-size: 16px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .accomodations {
+        width: 100%;
+        margin: 30px 1.5% 0 0;
+    }
+
+    .accomodations .accomodations_container {
+        width: 100%;
+    }
+
+    .accomodations .accomodations_container article {
+        flex-direction: column;
+        height: 250px;
+        width: 95%;
+    }
+
+    .accomodations .accomodations_container article a {
+        height: 100%;
+        width: 100%;
+    }
+
+    .accomodations .accomodations_container article a img {
+        height: 60%;
+        width: 97%;
+    }
+
+    .accomodations .accomodations_container article a div {
+        height: 40%;
+    }
+
+    .populars {
+        margin: 40px 0 0 0;
+        order: -1;
+        height: 580px;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .populars .populars_container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .populars .populars_container article {
+        width: 95%;
+    }
+
+    .populars .populars_container article a {
+        width: 100%;
+    }
+
+    .activities {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .activities h2 {
+        margin: 0 0 20px 2%;
+    }
+
+    .activities .activities_container {
+        height: auto;
+    }
+
+    .activities .activities_container article {
+        height: 200px;
+        width: 90%;
+    }
+
+    .activities .activities_container article a {
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .activities .activities_container article a img {
+        height: 80%;
+        width: 100%;
+    }
+
+    .activities .activities_container article a h2 {
+        margin: auto;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    footer section {
+        margin-left: 5%;
+        width: 95%;
+    }
+}
